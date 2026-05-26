@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>She Can Foundation - Participation Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="particle-layer" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="She Can Foundation home">
+      <span class="brand-mark">SC</span>
+      <span>She Can Foundation</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">Why Join</a>
+      <a href="#participate">Participate</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+      <span class="theme-icon">☾</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="floating-shape shape-one"></div>
+      <div class="floating-shape shape-two"></div>
+      <div class="floating-shape shape-three"></div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow">Participation Portal for Future Leaders</p>
+        <h1>She Can, She Will 💜</h1>
+        <p class="hero-subtitle">Empowering girls through technology, confidence, and opportunities.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#participate">Join the Movement</a>
+          <a class="btn btn-secondary" href="#about">Explore Program</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <img src="assets/girl-coding.svg" alt="Girl coding illustration" />
+      </div>
+    </section>
+
+    <section class="quote-band section reveal" aria-label="Motivational quotes">
+      <p class="section-kicker">Daily Spark</p>
+      <h2 id="quoteText">Code like a girl 💻</h2>
+    </section>
+
+    <section class="stats section" aria-label="She Can Foundation statistics">
+      <div class="stat-card reveal">
+        <strong class="counter" data-target="500">0</strong>
+        <span>Girls Inspired</span>
+      </div>
+      <div class="stat-card reveal">
+        <strong class="counter" data-target="100">0</strong>
+        <span>Workshops</span>
+      </div>
+      <div class="stat-card reveal">
+        <strong class="counter" data-target="50">0</strong>
+        <span>Volunteers</span>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Why Join Us</p>
+        <h2>Grow skills, confidence, and community.</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <span class="feature-icon">💻</span>
+          <h3>Learn Skills</h3>
+          <p>Build a foundation in coding, digital tools, communication, and creative problem solving.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-icon">✨</span>
+          <h3>Build Confidence</h3>
+          <p>Practice speaking up, asking questions, and believing that your ideas deserve space.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-icon">🚀</span>
+          <h3>Explore Technology</h3>
+          <p>Discover web development, AI, design, leadership, volunteering, and real project work.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-icon">🤝</span>
+          <h3>Join Community</h3>
+          <p>Meet supportive mentors and peers who cheer for your growth and your future.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="participation section" id="participate">
+      <div class="form-copy reveal">
+        <p class="section-kicker">Participate</p>
+        <h2>Tell us your dream.</h2>
+        <p>Share what you want to learn, build, lead, or change. Your participation details stay private and are shown only in the admin dashboard.</p>
+      </div>
+
+      <form class="participation-form glass-card reveal" id="participationForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required minlength="2" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="message">Message / Dream / Motivation</label>
+        <textarea id="message" name="message" rows="5" placeholder="I want to learn technology because..." required minlength="5"></textarea>
+
+        <p class="form-error" id="formError" role="alert"></p>
+
+        <button class="btn btn-primary submit-btn" type="submit" id="submitBtn">
+          <span class="btn-label">Submit Participation</span>
+          <span class="loader" aria-hidden="true"></span>
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="social-links" aria-label="Social media links">
+      <a href="#" aria-label="Instagram">◎</a>
+      <a href="#" aria-label="LinkedIn">in</a>
+      <a href="#" aria-label="YouTube">▶</a>
+    </div>
+    <p>Every girl deserves the opportunity to learn and grow in technology 💜</p>
+  </footer>
+
+  <div class="success-popup" id="successPopup" role="status">
+    Form Submitted Successfully 💜
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

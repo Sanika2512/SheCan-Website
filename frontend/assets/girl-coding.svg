@@ -1,0 +1,32 @@
+<svg width="640" height="520" viewBox="0 0 640 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="40" y="40" width="560" height="420" rx="52" fill="url(#bg)"/>
+  <circle cx="503" cy="117" r="50" fill="#FFD7EF" opacity=".9"/>
+  <circle cx="127" cy="377" r="72" fill="#C9B6FF" opacity=".75"/>
+  <path d="M145 395c34 50 108 69 174 55 84-18 123-86 174-126 41-32 94-45 104-96 13-66-54-134-128-150-57-12-91 13-151 16-82 4-112-36-166-10-80 39-67 224-7 311z" fill="#fff" opacity=".35"/>
+  <rect x="164" y="300" width="319" height="112" rx="18" fill="#31214A"/>
+  <rect x="189" y="318" width="266" height="16" rx="8" fill="#8062E8"/>
+  <rect x="190" y="349" width="75" height="12" rx="6" fill="#FF89C8"/>
+  <rect x="279" y="349" width="128" height="12" rx="6" fill="#70E0D4"/>
+  <rect x="190" y="376" width="159" height="12" rx="6" fill="#F7C873"/>
+  <path d="M283 282c-38-4-70-30-79-66-11-43 13-91 57-112 42-20 94-8 124 27 36 43 28 108-14 139-23 17-52 15-88 12z" fill="#3A234A"/>
+  <path d="M260 212c-18 28-22 74-6 89 20 19 72-12 105-44 19-19 30-40 33-58-12 5-29 6-49-4-42-22-67-6-83 17z" fill="#58315F"/>
+  <path d="M270 238c-24 47-29 103-13 134 22 43 94 42 128 5 24-26 20-66 8-103-14-45-36-83-72-83-23 0-39 23-51 47z" fill="#EB9D78"/>
+  <path d="M261 252c7 7 19 6 29 0 13-8 22-23 26-43 26 30 57 43 88 37-1-63-47-115-100-109-47 6-74 54-61 94 3 9 9 17 18 21z" fill="#3A234A"/>
+  <circle cx="252" cy="261" r="18" fill="#EB9D78"/>
+  <path d="M299 301c21 10 47 8 67-5" stroke="#8F4A5E" stroke-width="8" stroke-linecap="round"/>
+  <path d="M236 407c18-58 51-89 99-89 54 0 91 35 110 89H236z" fill="#7C4DFF"/>
+  <path d="M274 334c19 34 72 34 95 0 8 11 10 26 4 39-17 39-78 39-99 4-8-13-8-30 0-43z" fill="#FFB1D8"/>
+  <path d="M206 316c-48 18-73 52-77 102" stroke="#EB9D78" stroke-width="24" stroke-linecap="round"/>
+  <path d="M452 315c45 20 66 54 62 102" stroke="#EB9D78" stroke-width="24" stroke-linecap="round"/>
+  <rect x="252" y="389" width="151" height="38" rx="13" fill="#241538"/>
+  <circle cx="328" cy="408" r="7" fill="#FF89C8"/>
+  <path d="M179 130l19 38 42 6-30 29 7 41-38-20-37 20 7-41-30-29 42-6 18-38z" fill="#FF89C8" opacity=".85"/>
+  <path d="M473 229l10 21 23 3-17 16 4 23-20-11-21 11 4-23-16-16 23-3 10-21z" fill="#70E0D4" opacity=".9"/>
+  <defs>
+    <linearGradient id="bg" x1="82" y1="74" x2="574" y2="443" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A855F7"/>
+      <stop offset=".52" stop-color="#F472B6"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard - She Can Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="admin-body">
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">SC</span>
+      <span>Admin Dashboard</span>
+    </a>
+    <a class="btn btn-secondary compact-btn" href="index.html">Back to Portal</a>
+  </header>
+
+  <main class="admin-main">
+    <section class="admin-lock glass-card" id="adminLock">
+      <p class="section-kicker">Hidden Admin Area</p>
+      <h1>Enter Secret Code</h1>
+      <p>Use the admin code to view all participant submissions.</p>
+      <input type="password" id="adminCode" placeholder="Admin secret code" />
+      <button class="btn btn-primary" id="unlockBtn" type="button">Unlock Dashboard</button>
+      <p class="form-error" id="adminError"></p>
+    </section>
+
+    <section class="admin-dashboard hidden" id="adminDashboard">
+      <div class="admin-top">
+        <div>
+          <p class="section-kicker">Overview</p>
+          <h1>Participation Submissions</h1>
+        </div>
+        <div class="total-card glass-card">
+          <span>Total Participants</span>
+          <strong id="totalParticipants">0</strong>
+        </div>
+      </div>
+
+      <div class="admin-table-wrap glass-card">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Message</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody id="adminTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

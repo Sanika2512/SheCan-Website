@@ -1,0 +1,131 @@
+# She Can Foundation - Participation Portal
+
+A modern full-stack participation portal for girls interested in technology, leadership, and volunteering.
+
+## Folder Structure
+
+```text
+she-can-foundation-participation-portal/
+├── config/
+│   └── db.js
+├── frontend/
+│   ├── assets/
+│   │   └── girl-coding.svg
+│   ├── admin.html
+│   ├── admin.js
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+├── models/
+│   └── Submission.js
+├── routes/
+│   └── submissionRoutes.js
+├── .env
+├── .gitignore
+├── package.json
+├── README.md
+└── server.js
+```
+
+## Features
+
+- Responsive landing page with purple and pink gradient styling
+- Glassmorphism cards, floating shapes, scroll reveal animations, and particles
+- Motivational quote slider
+- Animated statistics counters
+- Participation form with validation, loading state, and success popup
+- MongoDB storage using Mongoose
+- Dynamic Girls Motivation Wall with a direct quote form
+- Realtime wall updates with Server-Sent Events
+- Hidden admin dashboard at `/admin.html`
+- Dark mode toggle
+
+## API Routes
+
+| Method | Route | Purpose |
+| --- | --- | --- |
+| `POST` | `/submit` | Save participant name, email, message, and timestamp |
+| `GET` | `/submissions` | Fetch submissions for the motivation wall |
+| `GET` | `/submissions/stream` | Realtime updates for new motivation wall submissions |
+| `GET` | `/health` | Check if the API is running |
+
+Admin requests send the `x-admin-secret` header so the dashboard can display participant emails.
+
+## Environment Variables
+
+Create a `.env` file in the project root:
+
+```env
+PORT=5000
+MONGO_URI=mongodb+srv://YOUR_USERNAME:YOUR_PASSWORD@YOUR_CLUSTER.mongodb.net/she_can_foundation?retryWrites=true&w=majority
+ADMIN_SECRET=SHECAN2025
+```
+
+This project is already configured locally with the MongoDB Atlas URL you provided.
+
+## Setup Instructions
+
+1. Install Node.js from `https://nodejs.org/`.
+2. Open a terminal in this project folder.
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the backend and frontend together:
+
+```bash
+npm start
+```
+
+5. Open the site:
+
+```text
+http://localhost:5000
+```
+
+6. Open the hidden admin dashboard:
+
+```text
+http://localhost:5000/admin.html
+```
+
+Admin secret code:
+
+```text
+SHECAN2025
+```
+
+## Development Mode
+
+For automatic server restart while coding:
+
+```bash
+npm run dev
+```
+
+## MongoDB Notes
+
+The backend connects in `config/db.js` using `process.env.MONGO_URI`.
+
+If MongoDB Atlas blocks the connection, open your Atlas dashboard and go to:
+
+```text
+Network Access -> Add IP Address -> Add Current IP Address
+```
+
+For classroom demos only, you can temporarily allow access from anywhere with `0.0.0.0/0`. For real projects, use your current IP address instead.
+
+The app also includes an in-memory fallback. This means the website, form, motivation wall, realtime updates, and admin dashboard still work locally even when Atlas blocks the connection. Once Atlas is allowed, new submissions automatically save to MongoDB.
+
+Each form submission is saved with:
+
+- Full name
+- Email
+- Message / dream / motivation
+- Submission date and time through Mongoose `timestamps`
+
+## Internship Presentation Tip
+
+When presenting the project, submit one or two sample participation messages first. Then show the motivation wall updating dynamically and open the admin dashboard to demonstrate the full-stack flow from frontend form to MongoDB to admin view.

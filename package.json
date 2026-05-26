@@ -1,0 +1,28 @@
+{
+  "name": "she-can-foundation-participation-portal",
+  "version": "1.0.0",
+  "description": "A women empowerment themed full-stack participation portal using HTML, CSS, JavaScript, Node.js, Express.js, and MongoDB.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "mongoose",
+    "participation-portal",
+    "women-empowerment"
+  ],
+  "author": "She Can Foundation",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
