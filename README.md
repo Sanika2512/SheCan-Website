@@ -111,24 +111,3 @@ npm run dev
 ## MongoAtlas Data Storage ScreenShot
 <img width="1911" height="906" alt="image" src="https://github.com/user-attachments/assets/3568c466-0eae-46c4-9a72-4ba4cee244e5" />
 
-## MongoDB Notes
-
-The backend connects in `config/db.js` using `process.env.MONGO_URI`.
-
-If MongoDB Atlas blocks the connection, open your Atlas dashboard and go to:
-
-```text
-Network Access -> Add IP Address -> Add Current IP Address
-```
-
-For classroom demos only, you can temporarily allow access from anywhere with `0.0.0.0/0`. For real projects, use your current IP address instead.
-
-The app also includes an in-memory fallback. This means the website, form, motivation wall, realtime updates, and admin dashboard still work locally even when Atlas blocks the connection. Once Atlas is allowed, new submissions automatically save to MongoDB.
-
-Each form submission is saved with:
-
-- Full name
-- Email
-- Message / dream / motivation
-- Submission date and time through Mongoose `timestamps`
-
