@@ -2,6 +2,9 @@
 
 A modern full-stack participation portal for girls interested in technology, leadership, and volunteering.
 
+## Live Demo
+https://shecan-website.onrender.com
+
 ## Folder Structure
 
 ```text
@@ -98,9 +101,6 @@ Admin secret code:
 SHECAN2025
 ```
 
-## MongoAtlas Data Storage ScreenShot
-<img width="1911" height="906" alt="image" src="https://github.com/user-attachments/assets/3568c466-0eae-46c4-9a72-4ba4cee244e5" />
-
 ## Development Mode
 
 For automatic server restart while coding:
@@ -108,6 +108,8 @@ For automatic server restart while coding:
 ```bash
 npm run dev
 ```
+## MongoAtlas Data Storage ScreenShot
+<img width="1911" height="906" alt="image" src="https://github.com/user-attachments/assets/3568c466-0eae-46c4-9a72-4ba4cee244e5" />
 
 ## MongoDB Notes
 
