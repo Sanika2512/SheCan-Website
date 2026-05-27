@@ -27,6 +27,7 @@ she-can-foundation-participation-portal/
 └── server.js
 ```
 
+
 ## Features
 
 - Responsive landing page with purple and pink gradient styling
@@ -97,6 +98,9 @@ Admin secret code:
 SHECAN2025
 ```
 
+## MongoAtlas Data Storage ScreenShot
+<img width="1911" height="906" alt="image" src="https://github.com/user-attachments/assets/3568c466-0eae-46c4-9a72-4ba4cee244e5" />
+
 ## Development Mode
 
 For automatic server restart while coding:
@@ -126,6 +130,3 @@ Each form submission is saved with:
 - Message / dream / motivation
 - Submission date and time through Mongoose `timestamps`
 
-## Internship Presentation Tip
-
-When presenting the project, submit one or two sample participation messages first. Then show the motivation wall updating dynamically and open the admin dashboard to demonstrate the full-stack flow from frontend form to MongoDB to admin view.
